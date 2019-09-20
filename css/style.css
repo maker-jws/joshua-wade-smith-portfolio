@@ -34,13 +34,14 @@ body{
     background-repeat: no-repeat;
   }
 
- #mastheadHoverGraphic{
+ #mastheadHoverGraphic{ 
+   /* this is the wrapper for the masthead letters */
   position: absolute;
    top: 15%; 
    display: grid;
    grid-gap: 2.6rem;
    grid-template-columns: auto auto auto auto auto;
-   grid-template-rows: auto auto auto auto;
+   grid-template-rows: auto auto auto;
    /* justify-content: space-evenly; */
    left: 10%;
    width: 80%;
@@ -51,12 +52,13 @@ body{
  }
 
  .masthead-img{
+   /* this is the the singular image for the masthead letters - background is inline */ 
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   border-top: 3px solid rgba(255, 255, 255, 0.25);
   padding: .3rem 0;
-  min-width: 50px;
+  /* min-width: 3em; */
   max-width:15rem;
-  min-height: 50px;
+  /* min-height: 3em; */
   max-height: 12rem;
   width: 100%;
   height: 100%;
@@ -84,7 +86,7 @@ body{
 .masthead-screen{
   transform-origin: 50%;
   width: 15rem;
-  height: 15rem;
+  max-height: 12rem;
   opacity: 0;
   border-radius: 2%;
   -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
@@ -102,5 +104,26 @@ body{
 @media (max-width: 768px){
   navbar-social{
     visibility: hidden;
+  }
+  .masthead-screen{
+    transform-origin: 50%;
+    width: auto;
+    height: auto;
+    max-height: 13em;
+    opacity: 0;
+    border-radius: 2%;
+    -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(75%);
+    overflow: full;
+    /* border: 1px solid white; */
+  }
+}
+
+@media (max-width: 768px){
+  navbar-social{
+    display: none;
+  }
+  .masthead-screen{
+    display: none;
   }
 }
