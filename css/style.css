@@ -35,40 +35,51 @@ body{
   }
 
  #mastheadHoverGraphic{ 
-   /* this is the wrapper for the masthead letters */
+  margin: inherit auto inherit 0;
   position: absolute;
    top: 15%; 
    display: grid;
-   grid-gap: 2.6rem;
-   grid-template-columns: auto auto auto auto auto;
-   grid-template-rows: auto auto auto;
-   /* justify-content: space-evenly; */
    left: 10%;
    width: 80%;
    height: 80%;
-   /* border: 1px solid white; */
+   background-image: url('../img/masthead/MMS-Splash1-white-space.png');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   margin: 1rem ;
    text-align: center;
-   overflow: hidden;
+   /* overflow: hidden; */
  }
-
+ .masthead-bleed{
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 25%;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(100, 100, 100, 1) 10%,
+    rgba(255, 255, 255, 0.5) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  /* border: 2px solid red; */
+ }
  .masthead-img{
    /* this is the the singular image for the masthead letters - background is inline */ 
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   border-top: 3px solid rgba(255, 255, 255, 0.25);
   padding: .3rem 0;
-  /* min-width: 3em; */
+  min-width: 3em;
   max-width:15rem;
-  /* min-height: 3em; */
+  min-height: 3em;
   max-height: 12rem;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); */
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat
  }
-
- 
 
  .masthead-screen:hover{
   opacity: 1;
@@ -78,7 +89,7 @@ body{
 } 
 
 .img-fluid{
-  height: 16rem;
+  height: 25rem;
   width: auto;
   margin: 0 auto;
 }
@@ -91,20 +102,31 @@ body{
   border-radius: 2%;
   -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
   filter: grayscale(75%);
-  /* overflow: hidden; */
-  /* border: 1px solid white; */
+  overflow: hidden; 
+  border: 1px solid white;
 }
 
+.portfolio-item{
+  text-align: center;
+}
 @media (min-width: 768px) {
   .navbar-social{
     margin: .6rem 0;
     padding: .35rem;
+  }
+  .masthead-bleed{
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 768px){
   navbar-social{
     visibility: hidden;
   }
+  .masthead-bleed{
+    width: 100%;
+    height: 100%;
+   }
   .masthead-screen{
     transform-origin: 50%;
     width: auto;
@@ -120,6 +142,10 @@ body{
 }
 
 @media (max-width: 768px){
+  .masthead-bleed{
+    width: 100%;
+    height: 100%;
+   }
   navbar-social{
     display: none;
   }
