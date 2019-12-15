@@ -88,10 +88,15 @@ body{
   box-shadow:  0 0 10px rgba(255, 0, 0, .3); 
 } 
 
-.img-fluid{
-  height: 25rem;
-  width: auto;
+.img-wrap{
+  min-height: 20em;
+  max-height: 20em;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.port-image{
+  margin: auto 0;
 }
 
 .masthead-screen{

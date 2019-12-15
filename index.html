@@ -33,7 +33,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container-fluid mx-5">
-      <a aria-label="nav-brand: home-icon" class="navbar-brand js-scroll-trigger" href="#page-top">Joshua Wade Smith</a>
+      <a aria-label="nav-brand: home-icon" class="navbar-brand js-scroll-trigger text-light strong" href="#page-top">
+        Joshua Wade Smith</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -58,7 +59,7 @@
           <div class='ml-3 my-2 row'>
             <li class="list-inline-item navbar-social">
               <a aria-label="social-media: linkedin link" href="https://www.linkedin.com/in/jws-maker/"
-                ref="no-referrer" target="_blank">
+                ref="no-referrer" rel="noreferrer" target=" _blank">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
@@ -88,7 +89,7 @@
 
   </header>
   <!-- Padding / Graphics -->
-  <section class="py-5 bg-white">
+  <section class="py-3 bg-white">
     <div class="container">
     </div>
   </section>
@@ -98,20 +99,25 @@
       <div class="row">
         <div class="col-lg-6 text-center">
           <h2 class="section-heading text-uppercase">About Me</h2>
-          <h3 class="section-subheading text-muted my-1">Creative Developer with front end focus backend
+          <h3 class="section-subheading text-muted my-1">Creative Developer with front end focus and backend
             experience.</h3>
           <div class="mx-auto">
-            <img class="mx-auto img-fluid mx-auto mw-100  my-5" src="./img/portfolio/01-thumbnail.png" alt="">
+            <img class="mx-auto img-fluid w-75 my-5" src="./img/modal-images/Game-Night-Tablet-Logo.jpg" alt="">
           </div>
         </div>
-        <div class="col-lg-5 text-center ml-5">
-          <div class="row text-justify my-1">
-            <p>Whether coding, white boarding, or working on a team, I excel at connecting the dots.
-              As a front-end engineer I value creativity and finding new solutions, <a href="#"></a>because you can’t
-              make it better if
-              you haven’t first tested its limits. After breaking down the problem and understanding how it works, I
-              dive in refactoring and documenting solutions. 10 years as an artist and educator has prepared me to be
-              flexible and user-centered.</p>
+        <div class="col-lg-5 text-center ml">
+          <div class="row text-justify my-1 mx-auto">
+            <p>I'm a Denver-based software developer, originally from Texas with a few pit stops in between (CHI/BAL).
+              I'm an experienced team facilitator, educator, and problem-solver. I relish nothing more than figuring out
+              how all the parts fit together. The maker in me is determined to build it well and build it fast. I am
+              driven, serious, and can get it done. I've ridden cross-country solo on a bike - twice - through tropical
+              storms, baking deserts. and mountain passes. <em> When it needs to ship, I'll make the deadline.</em>
+
+              <br /><br />
+              <a href="#"></a>When I am not writing or testing code I spend
+              time with my family, cycling through the streets of Denver, or rolling dice with friends. I'm not mad at
+              you, my face
+              just looks like this. </p>
           </div>
           <div class="row text-center my-5">
             <div class="col-md-3">
@@ -203,7 +209,10 @@
                 <p class="text-invert">Looking for art articles?</p>
               </div>
             </div>
-            <img class="mx-auto img-fluid" src="./img/portfolio/01-thumbnail.png" alt="">
+            <div class="image-fluid image-thumbnail img-wrap mx-auto">
+              <img class="port-image" src="./img/modal-images/Art-Thoughts-with-Rock-thumbnail.jpg" alt="">
+            </div>
+
           </a>
           <div class="portfolio-caption">
             <h4>Art Thoughts With Rock </h4>
@@ -217,7 +226,9 @@
                 <p class="text-invert">A React Timer app inspired by the Pomodoro Technique</p>
               </div>
             </div>
-            <img class="mx-auto img-fluid" src="./img/portfolio/02-thumbnail.png" alt="">
+            <div class="image-fluid image-thumbnail img-wrap mx-auto rounded ">
+              <img class="mx-auto port-image" src="./img/modal-images/Gyst-mobile-web-sm-thumbnail-2.jpg" alt="">
+            </div>
           </a>
           <div class="portfolio-caption">
             <h4>GYST</h4>
@@ -232,11 +243,13 @@
                 <p class="text-invert">Tabletop Game Scheduling App</p>
               </div>
             </div>
-            <img class="mx-auto img-fluid" src="./img/portfolio/03-thumbnail.png" alt="">
+            <div class="image-fluid image-thumbnail img-wrap mx-auto rounded">
+              <img class="mx-auto port-image" src="./img/modal-images/phone-game-night-thumbnail.jpg" alt="">
+            </div>
+
           </a>
           <div class="portfolio-caption">
             <h4>Game-Night!</h4>
-
           </div>
         </div>
         <div class="col-md-6 col-sm-6 mx-auto portfolio-item" id="portfolio-item-4">
@@ -247,7 +260,10 @@
                 <!-- <i class="fas fa-plus fa-3x"></i> -->
               </div>
             </div>
-            <img class="mx-auto img-fluid" src="./img/portfolio/04-thumbnail.png" alt="">
+            <div class="image-fluid image-thumbnail img-wrap mx-auto">
+              <img class="mx-auto port-image" src="./img/modal-images/five-room-imac-thumbnail.jpg" alt="">
+            </div>
+
           </a>
           <div class="portfolio-caption">
             <h4>Five-Room-Dungeon</h4>
@@ -362,8 +378,11 @@
                   Close Project</button> -->
               </div>
             </div>
-            <div class="col-md-6 mx-auto overflow-hidden" style="max-height: 80vh">
-              <img class="img-fluid d-block mx-auto" src="./img/portfolio/01-full.png" alt="">
+            <div class="col-md-6 mx-auto overflow-auto" style="max-height: 80vh">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/full/Art-Thoughts-with-Rock-web.jpg"
+                alt="splash screen art thoughts with rock">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/Art-Thoughts-with-Rock-2-web.jpg"
+                alt="splash screen art thoughts with rock">
             </div>
           </div>
         </div>
@@ -413,8 +432,9 @@
             </div>
             <div class="col-md-6 mx-auto overflow-auto" style="max-height: 80vh">
               <div class="row">
-                <img class="img-fluid d-block mx-auto" src="./img/portfolio/02-full.png" alt="">
-                <img class="img-fluid d-block mx-auto" src="./img/portfolio/02-full-01.png" alt="">
+                <img class="img-fluid d-block mx-auto" src="./img/modal-images/logo-group-gyst-3x3-web.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="./img/modal-images/Gyst-mobile-web-sm.jpg" alt="">
+
               </div>
             </div>
           </div>
@@ -456,8 +476,12 @@
                   Close Project</button> -->
               </div>
             </div>
-            <div class="col-lg-6 mx-auto">
-              <img class="img-fluid d-block mx-auto" src="./img/portfolio/03-full.png" alt="">
+            <div class="col-md-6 mx-auto overflow-auto" style="max-height: 80vh">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/phone-game-night-web.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/phone-game-night-event-web.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/Game-Night-imac-web.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/Wireframe-test-index-full-web.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/Wireframe-test-show-full-web.jpg" alt="">
             </div>
           </div>
         </div>
@@ -476,11 +500,10 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-md-6 mx-auto">
               <div class="modal-body text-justify">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase text-center">Five Room Dungeon</h2>
-                <img class="img-fluid d-block mx-auto" src="./img/portfolio/04-full.png" alt="">
                 <p>A short form JS/JQuery game which features custom character creation, random enemy generation,
                   time-limit, and random loot drops</p><br /><em>JavaScript, JQuery, HTML5, CSS3, Canvas</em>
                 <ul class="list-inline">
@@ -493,10 +516,16 @@
                   Close Project</button> -->
               </div>
             </div>
+            <div class="col-md-6 mx-auto overflow-auto" style="max-height: 80vh">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/five-room-imac-web.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/FRD-logo-letters-web.jpg" alt="">
+              <img class="img-fluid d-block mx-auto" src="./img/modal-images/FRD-logo-web.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Bootstrap core JavaScript -->
